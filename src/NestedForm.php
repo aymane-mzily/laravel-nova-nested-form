@@ -593,6 +593,7 @@ class NestedForm extends Field implements RelatableField
         return array_merge(
             parent::jsonSerialize(),
             [
+                'panel'=>$this->panel,
                 'singularLabel' => $this->singularLabel,
                 'pluralLabel' => $this->pluralLabel,
                 'indexKey' => static::wrapIndex(),
